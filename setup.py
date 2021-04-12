@@ -16,7 +16,7 @@
     along with this program.  If not, see https://www.gnu.org/licenses/
 '''
 from setuptools import setup
-from appify.__init__ import VERSION
+from appifier.__init__ import VERSION
 
 PACKAGE_NAME = "appifier"
 
