@@ -18,7 +18,7 @@
 from setuptools import setup
 from appify.__init__ import VERSION
 
-PACKAGE_NAME = "appifier"
+PACKAGE_NAME = "Appify"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
