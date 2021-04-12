@@ -18,7 +18,7 @@
 from setuptools import setup
 from appify.__init__ import VERSION
 
-PACKAGE_NAME = "appify"
+PACKAGE_NAME = "Appify"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -36,7 +36,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rohittp0/Appify",
-    packages=[PACKAGE_NAME],
+    packages=[PACKAGE_NAME.lower()],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU Affero General Public License v3",
@@ -47,7 +47,7 @@ setup(
         "Topic :: Utilities"
     ],
     entry_points={
-        "console_scripts": [f"{PACKAGE_NAME}={PACKAGE_NAME}.__main__:main"]
+        "console_scripts": [f"{PACKAGE_NAME.lower()}={PACKAGE_NAME.lower()}.__main__:main"]
     },
     include_package_data=True,
     install_requires=requires,
